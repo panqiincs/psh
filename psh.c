@@ -171,7 +171,6 @@ void handle_input(char *input_buf, char **arg_vec)
     char   *stringp;
 
     len = MAX_ARG_LEN;
-    num_read = 0;
     if ((num_read = getline(&input_buf, &len, stdin)) == -1) {
         exit(EXIT_FAILURE);
     }
